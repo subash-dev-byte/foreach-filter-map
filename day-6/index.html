@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day-6</title>
+
+    <style>
+      input::placeholder {
+        padding-left: 3px;
+        font-weight: bold;
+        color: black;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#0f172a]">
+    <div class="max-w-[900px] mx-auto mt-5">
+
+
+      <h1 class="text-[white] text-[30px] font-bold tracking-[1px]">
+        Resources Explorer — Array Methods Demo
+      </h1>
+
+
+
+      <p class="text-[white] font-medium">
+        Total: 6 | JavaScript: 2 | HTML: 1 | CSS: 1 | Frontend: 1 | Backend: 1
+      </p>
+
+      <div class="flex items-center gap-2 mt-2">
+        <select
+          name=""
+          id="filterData"
+          class="text-[black] items-center bg-gray-500 font-bold px-1 py-[4px] rounded-[5px]"
+        >
+          <option class="text-[white]">All Categories</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="Frontend">Frontend</option>
+          <option value="Backend">Backend</option>
+        </select>
+
+        <input
+          type="text"
+          name=""
+          id="input"
+          placeholder="Find by title"
+          class="bg-gray-500 p-1 w-[200px] font-bold text-[black] rounded-[5px]"
+        />
+
+        <button
+          class="bg-gray-500 py-1 px-2 font-bold text-[black] rounded-[5px]" id="login"
+        >
+          Log with forEach
+        </button>
+      </div>
+
+      <div class="flex gap-4 mt-3">
+        <button class="bg-gray-500 text-[white] px-2 py-1 rounded-[5px]" id="filterBtn">
+          Filter
+        </button>
+        <button class="bg-gray-500 text-[white] px-2 py-1 rounded-[5px]" id="reset">
+          Reset
+        </button>
+        <button class="bg-gray-500 text-[white] px-2 py-1 rounded-[5px]"  id="find">
+          Find
+        </button>
+      </div>    
+  
+
+      <div id="parentContainer" class="grid grid-cols-3 gap-2 mt-5">
+
+      </div>
+
+
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
